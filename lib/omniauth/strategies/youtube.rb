@@ -15,6 +15,7 @@ module OmniAuth
 
       option :authorize_params, {
         :scope => 'http://gdata.youtube.com https://www.googleapis.com/auth/userinfo.email'
+        :access_type => 'offline'
       }
 
       uid { user['id']['$t'] }
